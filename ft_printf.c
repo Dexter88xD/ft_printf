@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 23:50:08 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/12/24 22:25:33 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/12/25 15:43:06 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int	ft_putstr(const char *s, const char c, int n)
 		return (write(1, "(null)", 6));
 	num = 0;
 	if (n == 1)
-		return (write(1, &c, 1));
+		return (num += write(1, &c, 1));
 	else
 	{
 		i = 0;
@@ -119,7 +119,7 @@ int	ft_printf(const char *s, ...)
 	int		num;
 
 	if (!s)
-		return (0);
+		return (-1);
 	va_start(agrippa, s);
 	i = 0;
 	num = 0;
@@ -130,10 +130,11 @@ int	ft_printf(const char *s, ...)
 		else
 		{
 			i++;
+			if (s[i] == '\0')
+				return (-1);
 			num += what_identifier(s[i], agrippa);
 		}
 		i++;
 	}
-	va_end(agrippa);
 	return (num);
 }
