@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 23:50:08 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/12/25 15:43:06 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/12/25 15:51:43 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,10 +131,10 @@ int	ft_printf(const char *s, ...)
 		{
 			i++;
 			if (s[i] == '\0')
-				return (-1);
+				return (va_end(agrippa), -1);
 			num += what_identifier(s[i], agrippa);
 		}
 		i++;
 	}
-	return (num);
+	return (va_end(agrippa), num);
 }
