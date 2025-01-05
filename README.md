@@ -1,4 +1,4 @@
-# my_ft_printf
+# ft_printf
 
 This repository contains an implementation of the `ft_printf` function, a custom version of the standard `printf` function in C. This project is part of the 42 coding school curriculum.
 
