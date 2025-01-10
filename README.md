@@ -43,7 +43,6 @@ The repository is organised into the following files:
 - **Core Files**:
   - `ft_printf.c`: Main implementation of the `ft_printf` function.
   - `ft_printf.h`: Header file containing function prototypes and macros.
-  - `utils.c`: Utility functions supporting `ft_printf`.
 
 - **Build Files**:
   - `Makefile`: Script for compiling the library into `libftprintf.a`.
