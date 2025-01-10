@@ -40,12 +40,14 @@
 
 The repository is organised into the following files:
 
-    └── Dexter88xD-ft_printf/
-        ├── README.md
-        ├── LICENSE
-        ├── Makefile
-        ├── ft_printf.c
-        └── ft_printf.h
+```
+└── Dexter88xD-ft_printf/
+      ├── README.md
+      ├── LICENSE
+      ├── Makefile
+      ├── ft_printf.c
+      └── ft_printf.h
+```
 
 ---
 
