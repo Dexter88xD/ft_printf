@@ -40,12 +40,12 @@
 
 The repository is organised into the following files:
 
-- **Core Files**:
-  - `ft_printf.c`: Main implementation of the `ft_printf` function.
-  - `ft_printf.h`: Header file containing function prototypes and macros.
-
-- **Build Files**:
-  - `Makefile`: Script for compiling the library into `libftprintf.a`.
+    └── Dexter88xD-ft_printf/
+        ├── README.md
+        ├── LICENSE
+        ├── Makefile
+        ├── ft_printf.c
+        └── ft_printf.h
 
 ---
 
