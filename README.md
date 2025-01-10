@@ -1,6 +1,6 @@
 # ft_printf
 
-`ft_printf` is a custom implementation of the standard `printf` function in C. It provides formatted output functionality while offering the flexibility to extend and manage the codebase. This project is part of the 42 coding school curriculum, focusing on understanding variadic functions and custom formatting logic.
+`ft_printf` is a custom implementation of the standard `printf` function in C. It offers formatted output functionality while maintaining flexibility for customisation and extensibility.
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Introduction
 
-`ft_printf` is a simplified and customisable version of the standard `printf` function. It supports a subset of format specifiers and handles variadic arguments. This project is a great way to deepen your understanding of string manipulation, memory management, and variadic functions in C.
+`ft_printf` is a custom implementation of the standard `printf` function in C. It simplifies formatted output by replicating core functionalities, supporting a subset of format specifiers, and handling variadic arguments. This project, a staple of the 42 coding school curriculum, focuses on practical solutions for custom formatting, efficient string manipulation, and memory-safe operations.
 
 ---
 
@@ -31,8 +31,8 @@
   - `%u`: Print an unsigned integer.
   - `%x`/`%X`: Print a hexadecimal number (lowercase/uppercase).
   - `%%`: Print a literal `%` symbol.
-- Custom memory-safe implementation.
-- Adheres to the 42 coding school’s strict coding standards.
+- Custom implementation of memory-safe string and integer formatting.
+- Fully adheres to the 42 coding school’s strict coding standards.
 
 ---
 
@@ -41,24 +41,39 @@
 The repository is organised into the following files:
 
 - **Core Files**:
-  - `ft_printf.c`: Implementation of the main `ft_printf` function and its helpers.
+  - `ft_printf.c`: Main implementation of the `ft_printf` function.
   - `ft_printf.h`: Header file containing function prototypes and macros.
+  - `utils.c`: Utility functions supporting `ft_printf`.
 
 - **Build Files**:
-  - `Makefile`: Instructions to compile the library into a static library `libftprintf.a`.
+  - `Makefile`: Script for compiling the library into `libftprintf.a`.
 
 ---
 
 ## Installation
 
-To integrate `ft_printf` into your project:
+To integrate `ft_printf` into your project, follow these steps:
 
-1. Clone or copy the source files into your project directory.  
-2. Compile the library by running:
+1. **Clone the Repository**  
+   Clone the `ft_printf` repository:  
+   ```bash
+   git clone https://github.com/Dexter88xD/ft_printf.git
+   ```
+
+2. **Navigate to the Repository**  
+   Move into the cloned directory:  
+   ```bash
+   cd ft_printf
+   ```
+
+3. **Compile the Library**  
+   Run the `make` command to generate the static library:  
    ```bash
    make
    ```
-3. Include the header file in your project and link the library during compilation:
+
+4. **Link the Library**  
+   Include the `ft_printf` header in your source files and link the library during compilation:  
    ```bash
    gcc your_program.c libftprintf.a -o your_program
    ```
@@ -81,6 +96,7 @@ int main(void)
 }
 ```
 
+### Compile and Run
 Compile the program:
 ```bash
 gcc main.c libftprintf.a -o ft_printf_example
@@ -99,12 +115,10 @@ Contributions are welcome! Feel free to:
 - Open an issue for bug reports or feature requests.  
 - Submit a pull request with your enhancements or fixes.  
 
-Please ensure your code follows the 42 coding standards and includes relevant tests.
+Please ensure your code adheres to the 42 coding standards and includes relevant test cases.
 
 ---
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
---- 
